@@ -1,0 +1,9 @@
+title: pulse.loop
+author: Riccardo Persello # email, linkedin
+author: Fabio Cragnolini
+home: main.html
+keyword: pulse oximetry
+keyword: wrist
+keyword: ble
+sources:
+thumbnail:
