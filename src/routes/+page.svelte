@@ -101,7 +101,7 @@
 <!-- Resources -->
 <div class="flex flex-col justify-between bg-white">
 	<h2 class="text-5xl font-semibold">Resources</h2>
-
+    <!-- TODO: Better classes, move padding to blocks. -->
 </div>
 
 <!-- Footer -->
