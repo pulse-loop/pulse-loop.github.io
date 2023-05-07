@@ -112,19 +112,19 @@
 	}
 
 	.loop-background {
-		background-image: url('loop.jpeg');
+		background-image: url('loop.jpg');
 		background-size: cover;
 		background-position: center;
 	}
 
 	.hardware-background {
-		background-image: url('hardware.jpeg');
+		background-image: url('hardware.jpg');
 		background-size: cover;
 		background-position: bottom;
 	}
 
 	.firmware-background {
-		background-image: url('code.jpeg');
+		background-image: url('code.jpg');
 		background-size: cover;
 		background-position: bottom;
 	}
