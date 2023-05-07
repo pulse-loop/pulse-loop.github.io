@@ -1,10 +1,10 @@
 <!-- Hero -->
 
 <div class="hero-block justify-center">
-	<div class="flex flex-col items-center gap-3">
+	<div class="flex flex-col items-center gap-5">
 		<img class="w-8/12" src="computer.png" alt="A computer with the pulse.loop app running." />
 		<h1 class="text-7xl font-semibold">pulse.loop</h1>
-		<p class="text-gray-600 text-lg">
+		<p class="text-lg text-gray-600">
 			An open source firmware for wearable pulse oximetry devices.
 		</p>
 	</div>
@@ -13,7 +13,7 @@
 <!-- Goals -->
 
 <div class="loop-background">
-	<div class="text-white text-left w-3/12 self-start m-24 gap-4 flex flex-col text-lg leading-8">
+	<div class="m-24 flex w-3/12 flex-col gap-4 self-start text-left text-lg leading-8 text-white">
 		<h2 class="text-5xl font-semibold">Goals</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
@@ -30,7 +30,7 @@
 
 <!-- Hardware -->
 <div class="hardware-background flex flex-col">
-	<div class="text-black text-right w-3/12 m-24 gap-4 flex flex-col text-lg leading-8 self-end">
+	<div class="m-24 flex w-3/12 flex-col gap-4 self-end text-right text-lg leading-8 text-black">
 		<h2 class="text-5xl font-semibold">Hardware</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
@@ -47,7 +47,7 @@
 
 <!-- Firmware -->
 <div class="firmware-background flex flex-col">
-	<div class="text-white text-left w-3/12 m-24 gap-4 flex flex-col text-lg leading-8 self-start">
+	<div class="m-24 flex w-3/12 flex-col gap-4 self-start text-left text-lg leading-8 text-white">
 		<h2 class="text-5xl font-semibold">Firmware</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
@@ -64,8 +64,12 @@
 
 <!-- Software -->
 <div class="flex flex-row justify-between">
-	<img src="Xcode.png" class="w-5/12 object-contain mx-auto" />
-	<div class="text-black text-right w-3/12 m-24 gap-4 flex flex-col text-lg leading-8">
+	<img
+		src="Xcode.png"
+		class="mx-auto w-5/12 object-contain"
+		alt="An Xcode screenshot showing the development of the companion software."
+	/>
+	<div class="m-24 flex w-3/12 flex-col gap-4 text-right text-lg leading-8 text-black">
 		<h2 class="text-5xl font-semibold">Software</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
@@ -82,7 +86,7 @@
 
 <!-- Results -->
 <div class="flex flex-row justify-between bg-gray-200">
-	<div class="text-black text-left w-3/12 m-24 gap-4 flex flex-col text-lg leading-8">
+	<div class="m-24 flex w-3/12 flex-col gap-4 text-left text-lg leading-8 text-black">
 		<h2 class="text-5xl font-semibold">Results</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
@@ -95,20 +99,24 @@
 			modeling libraries.
 		</p>
 	</div>
-	<img src="MATLAB.png" class="w-5/12 object-contain mx-auto" />
+	<img
+		src="MATLAB.png"
+		class="mx-auto w-5/12 object-contain"
+		alt="A MATLAB screenshot showing correlation data for oximetry measurements."
+	/>
 </div>
 
 <!-- Resources -->
 <div class="flex flex-col justify-between bg-white">
 	<h2 class="text-5xl font-semibold">Resources</h2>
-    <!-- TODO: Better classes, move padding to blocks. -->
+	<!-- TODO: Better classes, move padding to blocks. -->
 </div>
 
 <!-- Footer -->
 
-<style>
+<style lang="scss">
 	.hero-block {
-		@apply h-screen flex flex-col;
+		@apply flex h-screen flex-col;
 	}
 
 	.loop-background {
