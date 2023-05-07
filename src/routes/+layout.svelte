@@ -4,16 +4,18 @@
 
 <!-- Vertical sidebar -->
 <nav
-	class="h-16 rotate-90 origin-top-left translate-x-16 bg-white flex flex-row items-center absolute"
+	class="h-16 rotate-90 origin-top-left translate-x-16 flex flex-row bg-transparent items-center fixed mix-blend-multiply"
 >
 	<!-- Padding -->
 	<div class="flex-grow" />
 	<img src="logo.svg" alt="pulse.loop logo" class="h-16 rotate-180" />
 </nav>
 
-<main class="bg-red-50 max-w-6xl px-32">
-	<slot />
-</main>
+<div>
+	<main class="flex flex-col">
+		<slot />
+	</main>
+</div>
 
 <style>
 	nav {
