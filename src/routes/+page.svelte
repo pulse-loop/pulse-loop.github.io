@@ -12,8 +12,8 @@
 
 <!-- Goals -->
 <div class="section loop-background">
-	<div class="flex w-3/12 flex-col gap-4 self-start text-left text-lg leading-8 text-white">
-		<h2 class="text-5xl font-semibold">Goals</h2>
+	<div class="flex w-3/12 flex-col gap-4 self-start text-left text-lg leading-8 text-gray-300">
+		<h2 class="text-5xl font-semibold text-white">Goals</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
 			signs from the wrist is a challenging task, as the signal is weak and the sensor is prone to
@@ -29,8 +29,8 @@
 
 <!-- Hardware -->
 <div class="section hardware-background">
-	<div class="flex w-5/12 flex-col gap-4 self-end text-right text-lg leading-8 text-black">
-		<h2 class="text-5xl font-semibold">Hardware</h2>
+	<div class="flex w-5/12 flex-col gap-4 self-end text-right text-lg leading-8 text-gray-700">
+		<h2 class="text-5xl font-semibold text-black">Hardware</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
 			signs from the wrist is a challenging task, as the signal is weak and the sensor is prone to
@@ -46,8 +46,8 @@
 
 <!-- Firmware -->
 <div class="section firmware-background">
-	<div class="flex w-5/12 flex-col gap-4 self-start text-left text-lg leading-8 text-white">
-		<h2 class="text-5xl font-semibold">Firmware</h2>
+	<div class="flex w-5/12 flex-col gap-4 self-start text-left text-lg leading-8 text-gray-300">
+		<h2 class="text-5xl font-semibold text-white">Firmware</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
 			signs from the wrist is a challenging task, as the signal is weak and the sensor is prone to
@@ -69,8 +69,8 @@
 			class="w-5/12 object-contain"
 			alt="An Xcode screenshot showing the development of the companion software."
 		/>
-		<div class="flex w-5/12 flex-col gap-4 text-right text-lg leading-8 text-black">
-			<h2 class="text-5xl font-semibold">Software</h2>
+		<div class="flex w-5/12 flex-col gap-4 text-right text-lg leading-8 text-gray-700">
+			<h2 class="text-5xl font-semibold text-black">Software</h2>
 			<p>
 				The goal of this project is the development of a wrist-worn pulse oximeter. Detection of
 				vital signs from the wrist is a challenging task, as the signal is weak and the sensor is
@@ -89,8 +89,8 @@
 <!-- Results -->
 <div class="section bg-gray-100">
 	<div class="flex flex-row justify-between">
-		<div class="flex w-5/12 flex-col gap-4 text-left text-lg leading-8 text-black">
-			<h2 class="text-5xl font-semibold">Results</h2>
+		<div class="flex w-5/12 flex-col gap-4 text-left text-lg leading-8 text-gray-700">
+			<h2 class="text-5xl font-semibold text-black">Results</h2>
 			<p>
 				The goal of this project is the development of a wrist-worn pulse oximeter. Detection of
 				vital signs from the wrist is a challenging task, as the signal is weak and the sensor is
@@ -123,6 +123,7 @@
 <style lang="scss">
 	.section {
 		@apply flex flex-col gap-4 p-24;
+		min-height: 40rem;
 	}
 
 	.loop-background {
