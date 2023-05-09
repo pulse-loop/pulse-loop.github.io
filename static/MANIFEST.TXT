@@ -1,9 +1,10 @@
 title: pulse.loop
-author: Riccardo Persello # email, linkedin
-author: Fabio Cragnolini
-home: main.html
-keyword: pulse oximetry
-keyword: wrist
-keyword: ble
-sources:
-thumbnail:
+author: Riccardo Persello (riccardo.persello@icloud.com)
+author: Fabio Cragnolini (fbcragnolini@gmail.com)
+home: index.html
+keyword: Pulse oximetry
+keyword: ESP32
+keyword: BLE
+keyword: Rust
+sources: https://github.com/pulse-loop
+thumbnail: logo.png

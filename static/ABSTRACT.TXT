@@ -1,1 +1,4 @@
 [en]
+The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital signs from the wrist is a challenging task, as the signal is weak and the sensor is prone to motion artifacts, but this positioning is ideal for comfortable continuous monitoring.
+
+Being a wearable device, it's important to have wireless access to recorded data. This is why we developed a companion app for iOS and macOS devices, along with two open source BLE modeling libraries.
