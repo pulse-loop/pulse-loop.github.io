@@ -4,7 +4,7 @@
 
 <!-- Vertical sidebar -->
 <nav
-	class="h-16 rotate-90 origin-top-left translate-x-16 flex flex-row bg-transparent items-center fixed mix-blend-multiply"
+	class="h-20 rotate-90 origin-top-left translate-x-20 flex flex-row bg-transparent items-center fixed mix-blend-multiply"
 >
 	<!-- Padding -->
 	<div class="flex-grow" />
