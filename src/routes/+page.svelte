@@ -1,6 +1,6 @@
 <!-- Hero -->
 
-<div class="hero-block justify-center">
+<div class="section h-screen justify-center">
 	<div class="flex flex-col items-center gap-5">
 		<img class="w-8/12" src="computer.png" alt="A computer with the pulse.loop app running." />
 		<h1 class="text-7xl font-semibold">pulse.loop</h1>
@@ -11,9 +11,8 @@
 </div>
 
 <!-- Goals -->
-
-<div class="loop-background">
-	<div class="m-24 flex w-3/12 flex-col gap-4 self-start text-left text-lg leading-8 text-white">
+<div class="section loop-background">
+	<div class="flex w-3/12 flex-col gap-4 self-start text-left text-lg leading-8 text-white">
 		<h2 class="text-5xl font-semibold">Goals</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
@@ -29,8 +28,8 @@
 </div>
 
 <!-- Hardware -->
-<div class="hardware-background flex flex-col">
-	<div class="m-24 flex w-3/12 flex-col gap-4 self-end text-right text-lg leading-8 text-black">
+<div class="section hardware-background">
+	<div class="flex w-5/12 flex-col gap-4 self-end text-right text-lg leading-8 text-black">
 		<h2 class="text-5xl font-semibold">Hardware</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
@@ -46,8 +45,8 @@
 </div>
 
 <!-- Firmware -->
-<div class="firmware-background flex flex-col">
-	<div class="m-24 flex w-3/12 flex-col gap-4 self-start text-left text-lg leading-8 text-white">
+<div class="section firmware-background">
+	<div class="flex w-5/12 flex-col gap-4 self-start text-left text-lg leading-8 text-white">
 		<h2 class="text-5xl font-semibold">Firmware</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
@@ -63,51 +62,58 @@
 </div>
 
 <!-- Software -->
-<div class="flex flex-row justify-between">
-	<img
-		src="Xcode.png"
-		class="mx-auto w-5/12 object-contain"
-		alt="An Xcode screenshot showing the development of the companion software."
-	/>
-	<div class="m-24 flex w-3/12 flex-col gap-4 text-right text-lg leading-8 text-black">
-		<h2 class="text-5xl font-semibold">Software</h2>
-		<p>
-			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
-			signs from the wrist is a challenging task, as the signal is weak and the sensor is prone to
-			motion artifacts, but this positioning is ideal for comfortable continuous monitoring.
-		</p>
-		<p>
-			Being a wearable device, it's important to have wireless access to recorded data. This is why
-			we developed a companion app for iOS and macOS devices, along with two open source BLE
-			modeling libraries.
-		</p>
+<div class="section">
+	<div class="flex flex-row justify-between">
+		<img
+			src="Xcode.png"
+			class="w-5/12 object-contain"
+			alt="An Xcode screenshot showing the development of the companion software."
+		/>
+		<div class="flex w-5/12 flex-col gap-4 text-right text-lg leading-8 text-black">
+			<h2 class="text-5xl font-semibold">Software</h2>
+			<p>
+				The goal of this project is the development of a wrist-worn pulse oximeter. Detection of
+				vital signs from the wrist is a challenging task, as the signal is weak and the sensor is
+				prone to motion artifacts, but this positioning is ideal for comfortable continuous
+				monitoring.
+			</p>
+			<p>
+				Being a wearable device, it's important to have wireless access to recorded data. This is
+				why we developed a companion app for iOS and macOS devices, along with two open source BLE
+				modeling libraries.
+			</p>
+		</div>
 	</div>
 </div>
 
 <!-- Results -->
-<div class="flex flex-row justify-between bg-gray-200">
-	<div class="m-24 flex w-3/12 flex-col gap-4 text-left text-lg leading-8 text-black">
-		<h2 class="text-5xl font-semibold">Results</h2>
-		<p>
-			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
-			signs from the wrist is a challenging task, as the signal is weak and the sensor is prone to
-			motion artifacts, but this positioning is ideal for comfortable continuous monitoring.
-		</p>
-		<p>
-			Being a wearable device, it's important to have wireless access to recorded data. This is why
-			we developed a companion app for iOS and macOS devices, along with two open source BLE
-			modeling libraries.
-		</p>
+<div class="section bg-gray-100">
+	<div class="flex flex-row justify-between">
+		<div class="flex w-5/12 flex-col gap-4 text-left text-lg leading-8 text-black">
+			<h2 class="text-5xl font-semibold">Results</h2>
+			<p>
+				The goal of this project is the development of a wrist-worn pulse oximeter. Detection of
+				vital signs from the wrist is a challenging task, as the signal is weak and the sensor is
+				prone to motion artifacts, but this positioning is ideal for comfortable continuous
+				monitoring.
+			</p>
+			<p>
+				Being a wearable device, it's important to have wireless access to recorded data. This is
+				why we developed a companion app for iOS and macOS devices, along with two open source BLE
+				modeling libraries.
+			</p>
+		</div>
+		<!-- TODO: New screenshot. -->
+		<img
+			src="MATLAB.png"
+			class="w-5/12 object-contain"
+			alt="A MATLAB screenshot showing correlation data for oximetry measurements."
+		/>
 	</div>
-	<img
-		src="MATLAB.png"
-		class="mx-auto w-5/12 object-contain"
-		alt="A MATLAB screenshot showing correlation data for oximetry measurements."
-	/>
 </div>
 
 <!-- Resources -->
-<div class="flex flex-col justify-between bg-white">
+<div class="section">
 	<h2 class="text-5xl font-semibold">Resources</h2>
 	<!-- TODO: Better classes, move padding to blocks. -->
 </div>
@@ -115,8 +121,8 @@
 <!-- Footer -->
 
 <style lang="scss">
-	.hero-block {
-		@apply flex h-screen flex-col;
+	.section {
+		@apply flex flex-col gap-4 p-24;
 	}
 
 	.loop-background {
