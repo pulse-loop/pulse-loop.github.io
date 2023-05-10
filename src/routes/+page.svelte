@@ -108,6 +108,37 @@
 <!-- Resources -->
 <div class="section">
 	<h2 class="text-5xl font-semibold">Resources</h2>
+	<div class="flex flex-row overflow-x-auto">
+		<div class="res-card">
+			<img src="hr3.png" />
+			<h3>Heart rate 3</h3>
+			<h5>Mikroe</h5>
+		</div>
+
+		<div class="res-card">
+			<img src="hr3.png" />
+			<h3>Heart rate 3</h3>
+			<h5>Mikroe</h5>
+		</div>
+
+		<div class="res-card">
+			<img src="hr3.png" />
+			<h3>Heart rate 3</h3>
+			<h5>Mikroe</h5>
+		</div>
+
+		<div class="res-card">
+			<img src="hr3.png" />
+			<h3>Heart rate 3</h3>
+			<h5>Mikroe</h5>
+		</div>
+
+		<div class="res-card">
+			<img src="hr3.png" />
+			<h3>Heart rate 3</h3>
+			<h5>Mikroe</h5>
+		</div>
+	</div>
 </div>
 
 <!-- Footer -->
@@ -118,7 +149,7 @@
 		<p><a href="https://uniud.it">Università degli Studi di Udine</a></p>
 	</div>
 
-	<div class="flex w-min flex-col mx-auto">
+	<div class="mx-auto flex w-min flex-col">
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Fabio Cragnolini</h4>
 			<span class="flex flex-row gap-2">
@@ -129,7 +160,7 @@
 		<code><a href="mailto:fbcragnolini@gmail.com">fbcragnolini@gmail.com</a></code>
 	</div>
 
-	<div class="flex w-min flex-col mx-auto">
+	<div class="mx-auto flex w-min flex-col">
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Riccardo Persello</h4>
 			<span class="flex flex-row gap-2">
@@ -142,6 +173,22 @@
 </div>
 
 <style lang="scss">
+	.res-card {
+		@apply m-6 flex w-96 flex-col rounded-lg bg-gray-50 p-8 shadow-md transition-shadow duration-300 hover:shadow-lg;
+
+		img {
+			@apply mb-4 max-h-48 object-contain drop-shadow-lg;
+		}
+
+		h3 {
+			@apply text-2xl font-semibold text-black;
+		}
+
+		h5 {
+			@apply text-gray-500;
+		}
+	}
+
 	.section {
 		@apply flex flex-col gap-4 p-24;
 		min-height: 40rem;
