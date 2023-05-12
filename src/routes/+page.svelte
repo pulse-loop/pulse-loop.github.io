@@ -81,7 +81,7 @@
 </div>
 
 <!-- Software -->
-<div class="section software-background">
+<div class="section software-background z-10">
 	<div class="flex flex-row justify-between">
 		<div />
 		<div class="flex w-5/12 flex-col gap-4 text-right text-lg leading-8 text-gray-700">
@@ -122,7 +122,7 @@
 <!-- Resources -->
 <div class="section">
 	<h2 class="text-5xl font-semibold">Resources</h2>
-	<div class="flex flex-row flex-nowrap gap-6 overflow-x-auto -mx-24 pl-20">
+	<div class="flex flex-row flex-nowrap gap-6 overflow-x-auto -mx-24 pl-24">
 		<div class="res-card">
 			<img src="hr3.png" alt="Mikroe Heart Rate 3 Click" />
 			<span>
@@ -189,8 +189,8 @@
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Fabio Cragnolini</h4>
 			<span class="flex flex-row gap-2">
-				<a href=""><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
-				<a href=""><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
+				<a href="https://github.com/FabioCragnolini" target="_blank"><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
+				<a href="https://linkedin.com/in/fabiocragnolini"><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
 			</span>
 		</div>
 		<code><a href="mailto:fbcragnolini@gmail.com">fbcragnolini@gmail.com</a></code>
@@ -200,8 +200,8 @@
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Riccardo Persello</h4>
 			<span class="flex flex-row gap-2">
-				<a href=""><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
-				<a href=""><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
+				<a href="https://github.com/persello"><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
+				<a href="https://linkedin.com/in/riccardo-persello"><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
 			</span>
 		</div>
 		<code><a href="mailto:riccardo.persello@icloud.com">riccardo.persello@icloud.com</a></code>
@@ -210,7 +210,7 @@
 
 <style lang="scss">
 	.res-card {
-		@apply my-4 flex w-64 flex-none flex-col justify-between rounded-2xl bg-gray-50 p-8 overflow-clip;
+		@apply my-4 flex w-64 flex-none flex-col justify-between rounded-2xl bg-gray-50 p-8 overflow-clip z-10;
 
 		img {
 			@apply mb-4 object-contain p-8 drop-shadow-lg;
