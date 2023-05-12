@@ -11,8 +11,12 @@
 
 <!-- Goals -->
 <div class="section loop-background">
-	<div class="flex w-3/12 flex-col gap-4 self-start text-left text-lg leading-8 text-gray-300">
-		<h2 class="text-5xl font-semibold text-white">Goals</h2>
+	<div class="flex w-4/12 flex-col gap-4 self-start text-left text-lg leading-8 text-pink-100">
+		<h2
+			class="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-5xl font-semibold text-transparent"
+		>
+			Goals
+		</h2>
 		<p>
 			The goal of this project is the development of a wrist-worn pulse oximeter. Detection of vital
 			signs from the wrist is a challenging task, as the signal is weak and the sensor is prone to
@@ -28,7 +32,7 @@
 
 <!-- Hardware -->
 <div class="section hardware-background">
-	<div class="flex w-5/12 flex-col gap-4 self-end text-right text-lg leading-8 text-gray-700">
+	<div class="flex w-7/12 flex-col gap-4 self-end text-right text-lg leading-8 text-gray-700">
 		<h2 class="text-5xl font-semibold text-black">Hardware</h2>
 		<p>
 			The project is based on the AFE4404 analog front-end, which is an ultra-small integrated
@@ -50,8 +54,12 @@
 
 <!-- Firmware -->
 <div class="section firmware-background">
-	<div class="flex w-5/12 flex-col gap-4 self-start text-left text-lg leading-8 text-gray-300">
-		<h2 class="text-5xl font-semibold text-white">Firmware</h2>
+	<div class="flex w-6/12 flex-col gap-4 self-start text-lg leading-8 text-gray-400">
+		<h2
+			class="bg-gradient-to-r from-lime-200 to-blue-500 bg-clip-text text-5xl font-semibold text-transparent"
+		>
+			Firmware
+		</h2>
 		<p>
 			The firmware runs on top of the ESP-IDF framework, and plays a crucial role in ensuring
 			accurate and reliable measurements. The automatic gain control adjusts the current of three
@@ -73,35 +81,41 @@
 </div>
 
 <!-- Software -->
-<div class="section">
+<div class="section software-background">
 	<div class="flex flex-row justify-between">
-		<img
-			src="Xcode.png"
-			class="w-5/12 object-contain"
-			alt="An Xcode screenshot showing the development of the companion software."
-		/>
+		<div />
 		<div class="flex w-5/12 flex-col gap-4 text-right text-lg leading-8 text-gray-700">
 			<h2 class="text-5xl font-semibold text-black">Software</h2>
-			<p>TODO</p>
-			<p>TODO</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro labore sint iste
+				iure impedit voluptatum veniam accusantium architecto voluptate officiis, officia minima,
+				incidunt qui atque cupiditate neque fugiat doloribus.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ea, ad a recusandae, at, et
+				illo tempore nulla sint aperiam placeat asperiores earum laudantium. Magnam corporis dolorem
+				ab asperiores esse.
+			</p>
 		</div>
 	</div>
 </div>
 
 <!-- Results -->
-<div class="section bg-gray-50">
+<div class="section bg-gray-50 results-background">
 	<div class="flex flex-row justify-between">
 		<div class="flex w-5/12 flex-col gap-4 text-left text-lg leading-8 text-gray-700">
 			<h2 class="text-5xl font-semibold text-black">Results</h2>
-			<p>TODO</p>
-			<p>TODO</p>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam expedita veritatis eum
+				quasi voluptate recusandae doloribus voluptatem. Reiciendis fugiat eius eum facilis harum
+				mollitia, delectus eligendi hic! Tenetur, quasi odit!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem earum architecto,
+				nemo ratione non est minus quia impedit sint aliquid blanditiis eum assumenda nisi ipsa
+				illum, facere optio ullam.
+			</p>
 		</div>
-		<!-- TODO: New screenshot. -->
-		<img
-			src="MATLAB.png"
-			class="w-5/12 object-contain"
-			alt="A MATLAB screenshot showing correlation data for oximetry measurements."
-		/>
 	</div>
 </div>
 
@@ -190,7 +204,7 @@
 	}
 
 	.section {
-		@apply flex flex-col gap-4 p-24;
+		@apply flex flex-col gap-4 p-24 overflow-clip;
 		min-height: 40rem;
 	}
 
@@ -218,5 +232,19 @@
 		background-image: url('../../../code.jpg');
 		background-size: cover;
 		background-position: bottom;
+	}
+
+	.software-background {
+		background-image: url('../../../Xcode.png');
+		background-size: 60%;
+		background-position: -30%;
+		background-repeat: no-repeat;
+	}
+
+	.results-background {
+		background-image: url('../../../MATLAB.png');
+		background-size: 60%;
+		background-position: 130%;
+		background-repeat: no-repeat;
 	}
 </style>

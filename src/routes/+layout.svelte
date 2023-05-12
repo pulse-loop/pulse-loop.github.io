@@ -11,7 +11,7 @@
 </nav>
 
 <div>
-	<main class="flex flex-col">
+	<main class="flex flex-col overflow-x-hidden">
 		<slot />
 	</main>
 </div>
