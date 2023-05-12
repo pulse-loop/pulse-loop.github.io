@@ -101,7 +101,7 @@
 </div>
 
 <!-- Results -->
-<div class="section bg-gray-50 results-background">
+<div class="section results-background bg-gray-50">
 	<div class="flex flex-row justify-between">
 		<div class="flex w-5/12 flex-col gap-4 text-left text-lg leading-8 text-gray-700">
 			<h2 class="text-5xl font-semibold text-black">Results</h2>
@@ -122,35 +122,57 @@
 <!-- Resources -->
 <div class="section">
 	<h2 class="text-5xl font-semibold">Resources</h2>
-	<div class="flex flex-row overflow-x-auto">
+	<div class="flex flex-row flex-nowrap gap-6 overflow-x-auto -mx-24 pl-20">
 		<div class="res-card">
-			<img src="hr3.png" />
-			<h3>Heart rate 3</h3>
-			<h5>Mikroe</h5>
+			<img src="hr3.png" alt="Mikroe Heart Rate 3 Click" />
+			<span>
+				<h3>Heart rate 3</h3>
+				<h5>Mikroe</h5>
+				<a
+					href="https://www.mikroe.com/heart-rate-3-click"
+					target="_blank"
+					>Buy from Mikroe</a
+				>
+			</span>
 		</div>
 
 		<div class="res-card">
-			<img src="hr3.png" />
-			<h3>Heart rate 3</h3>
-			<h5>Mikroe</h5>
+			<img src="esp32c3.png" alt="ESP32-C3 Development Board" />
+			<span>
+				<h3>ESP32-C3 DevKitM-1</h3>
+				<h5>Espressif</h5>
+				<a
+					href="https://www.mouser.it/ProductDetail/Espressif-Systems/ESP32-C3-DevKitM-1?qs=pUKx8fyJudB1sOWbbEnGFw%3D%3D"
+					target="_blank"
+					>Buy from Mouser</a
+				>
+			</span>
 		</div>
 
 		<div class="res-card">
-			<img src="hr3.png" />
-			<h3>Heart rate 3</h3>
-			<h5>Mikroe</h5>
+			<img src="esp32c3.png" alt="ESP32-C3 Development Board" />
+			<span>
+				<h3>ESP32-C3 DevKitM-1</h3>
+				<h5>Espressif</h5>
+				<a
+					href="https://www.mouser.it/ProductDetail/Espressif-Systems/ESP32-C3-DevKitM-1?qs=pUKx8fyJudB1sOWbbEnGFw%3D%3D"
+					target="_blank"
+					>Buy from Mouser</a
+				>
+			</span>
 		</div>
 
 		<div class="res-card">
-			<img src="hr3.png" />
-			<h3>Heart rate 3</h3>
-			<h5>Mikroe</h5>
-		</div>
-
-		<div class="res-card">
-			<img src="hr3.png" />
-			<h3>Heart rate 3</h3>
-			<h5>Mikroe</h5>
+			<img src="esp32c3.png" alt="ESP32-C3 Development Board" />
+			<span>
+				<h3>ESP32-C3 DevKitM-1</h3>
+				<h5>Espressif</h5>
+				<a
+					href="https://www.mouser.it/ProductDetail/Espressif-Systems/ESP32-C3-DevKitM-1?qs=pUKx8fyJudB1sOWbbEnGFw%3D%3D"
+					target="_blank"
+					>Buy from Mouser</a
+				>
+			</span>
 		</div>
 	</div>
 </div>
@@ -188,23 +210,31 @@
 
 <style lang="scss">
 	.res-card {
-		@apply m-6 flex w-96 flex-col rounded-lg bg-gray-50 p-8 shadow-md transition-shadow duration-300 hover:shadow-lg;
+		@apply my-4 flex w-64 flex-none flex-col justify-between rounded-2xl bg-gray-50 p-8 overflow-clip;
 
 		img {
-			@apply mb-4 max-h-48 object-contain drop-shadow-lg;
+			@apply mb-4 object-contain p-8 drop-shadow-lg;
 		}
 
 		h3 {
-			@apply text-2xl font-semibold text-black;
+			@apply mt-2 text-2xl font-bold text-black;
 		}
 
 		h5 {
-			@apply text-gray-500;
+			@apply font-semibold uppercase tracking-wider text-gray-400;
+		}
+
+		span {
+			@apply flex flex-col;
+
+			a {
+				@apply mt-4 self-stretch bg-blue-100 p-4 text-center font-semibold text-blue-500 transition-all hover:bg-blue-600 hover:text-white -m-8;
+			}
 		}
 	}
 
 	.section {
-		@apply flex flex-col gap-4 p-24 overflow-clip;
+		@apply flex flex-col gap-4 overflow-clip p-24;
 		min-height: 40rem;
 	}
 
