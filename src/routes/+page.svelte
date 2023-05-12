@@ -190,7 +190,7 @@
 			<h4 class="font-bold text-black">Fabio Cragnolini</h4>
 			<span class="flex flex-row gap-2">
 				<a href="https://github.com/FabioCragnolini" target="_blank"><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
-				<a href="https://linkedin.com/in/fabiocragnolini"><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
+				<a href="https://linkedin.com/in/fabiocragnolini" target="_blank"><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
 			</span>
 		</div>
 		<code><a href="mailto:fbcragnolini@gmail.com">fbcragnolini@gmail.com</a></code>
@@ -200,8 +200,8 @@
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Riccardo Persello</h4>
 			<span class="flex flex-row gap-2">
-				<a href="https://github.com/persello"><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
-				<a href="https://linkedin.com/in/riccardo-persello"><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
+				<a href="https://github.com/persello" target="_blank"><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
+				<a href="https://linkedin.com/in/riccardo-persello" target="_blank"><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
 			</span>
 		</div>
 		<code><a href="mailto:riccardo.persello@icloud.com">riccardo.persello@icloud.com</a></code>
