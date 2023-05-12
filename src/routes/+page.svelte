@@ -1,3 +1,9 @@
+<svelte:head>
+	<title>pulse.loop</title>
+	<meta name="description" content="An open source firmware for wearable pulse oximetry devices." />
+	<!-- TODO: Add logo. -->
+</svelte:head>
+
 <!-- Hero -->
 <div class="section h-screen justify-center">
 	<div class="flex flex-col items-center gap-5">
