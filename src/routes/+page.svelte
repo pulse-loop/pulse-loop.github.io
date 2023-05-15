@@ -162,7 +162,7 @@
 		</div>
 
 		<div class="res-card">
-			<img src="logos/pl.png" alt="pulse.loop app icon" class="mt-12 scale-125" />
+			<img src="logos/pl.png" alt="pulse.loop icon" class="mt-20" />
 			<span>
 				<h3>Firmware</h3>
 				<h5>Source code</h5>
@@ -243,7 +243,7 @@
 		@apply z-10 my-4 flex w-64 flex-none flex-col justify-between overflow-clip rounded-2xl bg-gray-50 p-8;
 
 		img {
-			@apply mb-4 object-contain p-8 drop-shadow-lg;
+			@apply mb-4 object-contain p-8;
 		}
 
 		h3 {
