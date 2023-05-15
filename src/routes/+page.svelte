@@ -5,22 +5,24 @@
 
 <!-- Hero -->
 <div class="section h-screen justify-center">
-	<div class="flex flex-col items-center gap-5">
+	<div class="flex flex-col items-center gap-5 p-4">
 		<img
-			class="w-8/12"
+			class="sm:w-8/12"
 			src="images/computer.png"
 			alt="A computer with the pulse.loop app running."
 		/>
-		<h1 class="text-7xl font-semibold">pulse.loop</h1>
-		<p class="text-lg text-gray-600">
+		<h1 class="text-5xl font-semibold sm:text-7xl">pulse.loop</h1>
+		<p class="w-2/3 text-center text-gray-600 sm:text-lg">
 			An open source firmware for wearable pulse oximetry devices.
 		</p>
 	</div>
 </div>
 
 <!-- Goals -->
-<div class="section loop-background">
-	<div class="flex w-4/12 flex-col gap-4 self-start text-left text-lg leading-8 text-pink-100">
+<div class="section loop-background bg-black">
+	<div
+		class="z-10 flex flex-col gap-4 self-start p-8 text-left text-pink-100 text-opacity-80 sm:p-12 md:p-16 lg:w-4/12 lg:p-24"
+	>
 		<h2
 			class="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-5xl font-semibold text-transparent"
 		>
@@ -37,11 +39,18 @@
 			modeling libraries.
 		</p>
 	</div>
+	<img
+		src="images/loop_mobile.jpg"
+		alt="A render of an electronic bracelet."
+		class="-mt-80 lg:hidden"
+	/>
 </div>
 
 <!-- Hardware -->
 <div class="section hardware-background">
-	<div class="flex w-7/12 flex-col gap-4 self-end text-right text-lg leading-8 text-gray-700">
+	<div
+		class="flex flex-col gap-4 self-end p-8 text-gray-700 sm:p-12 md:p-16 lg:w-7/12 lg:p-24 lg:text-right"
+	>
 		<h2 class="text-5xl font-semibold text-black">Hardware</h2>
 		<p>
 			The project is based on the AFE4404 analog front-end, which is an ultra-small integrated
@@ -62,8 +71,10 @@
 </div>
 
 <!-- Firmware -->
-<div class="section firmware-background">
-	<div class="flex w-6/12 flex-col gap-4 self-start text-lg leading-8 text-gray-400">
+<div class="section firmware-background bg-black">
+	<div
+		class="z-10 flex flex-col gap-4 self-start p-8 text-gray-400 sm:p-12 md:p-16 lg:w-6/12 lg:p-24"
+	>
 		<h2
 			class="bg-gradient-to-r from-lime-200 to-blue-500 bg-clip-text text-5xl font-semibold text-transparent"
 		>
@@ -93,7 +104,9 @@
 <div class="section software-background z-10">
 	<div class="flex flex-row justify-between">
 		<div />
-		<div class="flex w-5/12 flex-col gap-4 text-right text-lg leading-8 text-gray-700">
+		<div
+			class="flex flex-col gap-4 p-8 text-gray-700 sm:p-12 md:p-16 lg:w-5/12 lg:p-24 lg:text-right"
+		>
 			<h2 class="text-5xl font-semibold text-black">Software</h2>
 			<p>
 				The companion app developed for the project is developed in SwiftUI, a declarative UI
@@ -116,7 +129,7 @@
 <!-- Results -->
 <div class="section results-background bg-gray-50">
 	<div class="flex flex-row justify-between">
-		<div class="flex w-5/12 flex-col gap-4 text-left text-lg leading-8 text-gray-700">
+		<div class="flex flex-col gap-4 p-8 text-left text-gray-700 sm:p-12 md:p-16 lg:w-5/12 lg:p-24">
 			<h2 class="text-5xl font-semibold text-black">Results</h2>
 			<p>
 				In conclusion, the pulse oximeter was calibrated against a commercial device and the
@@ -138,8 +151,10 @@
 
 <!-- Resources -->
 <div class="section">
-	<h2 class="text-5xl font-semibold">Resources</h2>
-	<div class="hidden-scrollbar -mx-24 flex flex-row flex-nowrap gap-6 overflow-x-auto px-24">
+	<h2 class="pl-8 pt-20 text-5xl font-semibold sm:pl-12 md:pl-16 lg:pl-24">Resources</h2>
+	<div
+		class="hidden-scrollbar pb-8 flex flex-row flex-nowrap gap-6 overflow-x-auto px-8 sm:px-12 md:px-16 lg:px-24"
+	>
 		<div class="res-card">
 			<img src="images/hr3.png" alt="Mikroe Heart Rate 3 Click" />
 			<span>
@@ -216,7 +231,7 @@
 		<p><a href="https://uniud.it">Università degli Studi di Udine</a></p>
 	</div>
 
-	<div class="mx-auto flex w-min flex-col">
+	<div class="lg:mx-auto flex w-min flex-col">
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Fabio Cragnolini</h4>
 			<span class="flex flex-row gap-2">
@@ -231,7 +246,7 @@
 		<code><a href="mailto:fbcragnolini@gmail.com">fbcragnolini@gmail.com</a></code>
 	</div>
 
-	<div class="mx-auto flex w-min flex-col">
+	<div class="lg:mx-auto flex w-min flex-col">
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Riccardo Persello</h4>
 			<span class="flex flex-row gap-2">
@@ -282,12 +297,12 @@
 	}
 
 	.section {
-		@apply flex flex-col gap-4 overflow-clip p-24;
+		@apply flex flex-col gap-4 leading-8 sm:text-lg;
 		min-height: 40rem;
 	}
 
 	.footer {
-		@apply grid grid-cols-3 bg-gray-50 px-36 pb-32 pt-12;
+		@apply grid lg:grid-cols-3 bg-gray-50 px-8 sm:px-12 md:px-16 lg:px-24 pb-32 pt-12 gap-12;
 
 		h4 {
 			@apply mb-2;
@@ -295,34 +310,44 @@
 	}
 
 	.loop-background {
-		background-image: url('../../../images/loop.jpg');
-		background-size: cover;
-		background-position: center;
+		@media screen and (min-width: 1024px) {
+			background-image: url('../../../images/loop.jpg');
+			background-size: cover;
+			background-position: center;
+		}
 	}
 
 	.hardware-background {
-		background-image: url('../../../images/hardware.jpg');
-		background-size: cover;
-		background-position: bottom;
+		@media screen and (min-width: 1024px) {
+			background-image: url('../../../images/hardware.jpg');
+			background-size: cover;
+			background-position: bottom;
+		}
 	}
 
 	.firmware-background {
-		background-image: url('../../../images/code.jpg');
-		background-size: cover;
-		background-position: bottom;
+		@media screen and (min-width: 1024px) {
+			background-image: url('../../../images/code.jpg');
+			background-size: cover;
+			background-position: bottom;
+		}
 	}
 
 	.software-background {
-		background-image: url('../../../images/Xcode.png');
-		background-size: 60%;
-		background-position: -30%;
-		background-repeat: no-repeat;
+		@media screen and (min-width: 1024px) {
+			background-image: url('../../../images/Xcode.png');
+			background-size: 60%;
+			background-position: -30%;
+			background-repeat: no-repeat;
+		}
 	}
 
 	.results-background {
-		background-image: url('../../../images/MATLAB.png');
-		background-size: 60%;
-		background-position: 130%;
-		background-repeat: no-repeat;
+		@media screen and (min-width: 1024px) {
+			background-image: url('../../../images/MATLAB.png');
+			background-size: 60%;
+			background-position: 130%;
+			background-repeat: no-repeat;
+		}
 	}
 </style>
