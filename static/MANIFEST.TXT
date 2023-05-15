@@ -7,4 +7,4 @@ keyword: ESP32
 keyword: BLE
 keyword: Rust
 sources: https://github.com/pulse-loop
-thumbnail: logo.png
+thumbnail: favicon.png

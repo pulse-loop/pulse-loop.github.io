@@ -6,7 +6,7 @@
 <nav class="fixed bottom-0 mix-blend-multiply">
 	<!-- Padding -->
 	<img
-		src="logo.svg"
+		src="logos/pl_text.svg"
 		alt="pulse.loop logo"
 		class="-z-10 h-16 origin-bottom-left translate-x-16 -rotate-90"
 	/>

@@ -7,7 +7,7 @@
 <!-- Hero -->
 <div class="section h-screen justify-center">
 	<div class="flex flex-col items-center gap-5">
-		<img class="w-8/12" src="computer.png" alt="A computer with the pulse.loop app running." />
+		<img class="w-8/12" src="images/computer.png" alt="A computer with the pulse.loop app running." />
 		<h1 class="text-7xl font-semibold">pulse.loop</h1>
 		<p class="text-lg text-gray-600">
 			An open source firmware for wearable pulse oximetry devices.
@@ -130,7 +130,7 @@
 	<h2 class="text-5xl font-semibold">Resources</h2>
 	<div class="-mx-24 flex flex-row flex-nowrap gap-6 overflow-x-auto px-24 hidden-scrollbar">
 		<div class="res-card">
-			<img src="hr3.png" alt="Mikroe Heart Rate 3 Click" />
+			<img src="images/hr3.png" alt="Mikroe Heart Rate 3 Click" />
 			<span>
 				<h3>Heart rate 3</h3>
 				<h5>Mikroe</h5>
@@ -139,7 +139,7 @@
 		</div>
 
 		<div class="res-card">
-			<img src="esp32c3.png" alt="ESP32-C3 Development Board" />
+			<img src="images/esp32c3.png" alt="ESP32-C3 Development Board" />
 			<span>
 				<h3>ESP32-C3 DevKitM-1</h3>
 				<h5>Espressif</h5>
@@ -151,7 +151,7 @@
 		</div>
 
 		<div class="res-card">
-			<img src="crates.png" alt="crates.io Logo" class="mt-12 scale-125" />
+			<img src="logos/crates.png" alt="crates.io Logo" class="mt-12 scale-125" />
 			<span>
 				<h3>Bluedroid</h3>
 				<h5>Rust crate</h5>
@@ -163,7 +163,7 @@
 		</div>
 
 		<div class="res-card">
-			<img src="crates.png" alt="crates.io Logo" class="mt-12 scale-125" />
+			<img src="logos/crates.png" alt="crates.io Logo" class="mt-12 scale-125" />
 			<span>
 				<h3>AFE4404</h3>
 				<h5>Rust crate</h5>
@@ -175,7 +175,7 @@
 		</div>
 
 		<div class="res-card">
-			<img src="macos_icon.png" alt="pulse.loop app icon" class="mt-12 scale-125" />
+			<img src="logos/macos_app.png" alt="pulse.loop app icon" class="mt-12 scale-125" />
 			<span>
 				<h3>pulse.loop client</h3>
 				<h5>App source code</h5>
@@ -201,10 +201,10 @@
 			<h4 class="font-bold text-black">Fabio Cragnolini</h4>
 			<span class="flex flex-row gap-2">
 				<a href="https://github.com/FabioCragnolini" target="_blank"
-					><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a
+					><img src="logos/github.svg" class="h-5 w-5" alt="GitHub Logo" /></a
 				>
 				<a href="https://linkedin.com/in/fabiocragnolini" target="_blank"
-					><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a
+					><img src="logos/linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a
 				>
 			</span>
 		</div>
@@ -216,10 +216,10 @@
 			<h4 class="font-bold text-black">Riccardo Persello</h4>
 			<span class="flex flex-row gap-2">
 				<a href="https://github.com/persello" target="_blank"
-					><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a
+					><img src="logos/github.svg" class="h-5 w-5" alt="GitHub Logo" /></a
 				>
 				<a href="https://linkedin.com/in/riccardo-persello" target="_blank"
-					><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a
+					><img src="logos/linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a
 				>
 			</span>
 		</div>
@@ -275,32 +275,32 @@
 	}
 
 	.loop-background {
-		background-image: url('../../../loop.jpg');
+		background-image: url('../../../images/loop.jpg');
 		background-size: cover;
 		background-position: center;
 	}
 
 	.hardware-background {
-		background-image: url('../../../hardware.jpg');
+		background-image: url('../../../images/hardware.jpg');
 		background-size: cover;
 		background-position: bottom;
 	}
 
 	.firmware-background {
-		background-image: url('../../../code.jpg');
+		background-image: url('../../../images/code.jpg');
 		background-size: cover;
 		background-position: bottom;
 	}
 
 	.software-background {
-		background-image: url('../../../Xcode.png');
+		background-image: url('../../../images/Xcode.png');
 		background-size: 60%;
 		background-position: -30%;
 		background-repeat: no-repeat;
 	}
 
 	.results-background {
-		background-image: url('../../../MATLAB.png');
+		background-image: url('../../../images/MATLAB.png');
 		background-size: 60%;
 		background-position: 130%;
 		background-repeat: no-repeat;
