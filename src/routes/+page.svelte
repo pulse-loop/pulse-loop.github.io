@@ -128,17 +128,13 @@
 <!-- Resources -->
 <div class="section">
 	<h2 class="text-5xl font-semibold">Resources</h2>
-	<div class="flex flex-row flex-nowrap gap-6 overflow-x-auto -mx-24 pl-24">
+	<div class="-mx-24 flex flex-row flex-nowrap gap-6 overflow-x-auto px-24 hidden-scrollbar">
 		<div class="res-card">
 			<img src="hr3.png" alt="Mikroe Heart Rate 3 Click" />
 			<span>
 				<h3>Heart rate 3</h3>
 				<h5>Mikroe</h5>
-				<a
-					href="https://www.mikroe.com/heart-rate-3-click"
-					target="_blank"
-					>Buy from Mikroe</a
-				>
+				<a href="https://www.mikroe.com/heart-rate-3-click" target="_blank">Buy from Mikroe</a>
 			</span>
 		</div>
 
@@ -149,34 +145,43 @@
 				<h5>Espressif</h5>
 				<a
 					href="https://www.mouser.it/ProductDetail/Espressif-Systems/ESP32-C3-DevKitM-1?qs=pUKx8fyJudB1sOWbbEnGFw%3D%3D"
-					target="_blank"
-					>Buy from Mouser</a
+					target="_blank">Buy from Mouser</a
 				>
 			</span>
 		</div>
 
 		<div class="res-card">
-			<img src="esp32c3.png" alt="ESP32-C3 Development Board" />
+			<img src="crates.png" alt="crates.io Logo" class="mt-12 scale-125" />
 			<span>
-				<h3>ESP32-C3 DevKitM-1</h3>
-				<h5>Espressif</h5>
+				<h3>Bluedroid</h3>
+				<h5>Rust crate</h5>
 				<a
-					href="https://www.mouser.it/ProductDetail/Espressif-Systems/ESP32-C3-DevKitM-1?qs=pUKx8fyJudB1sOWbbEnGFw%3D%3D"
-					target="_blank"
-					>Buy from Mouser</a
+					href="https://crates.io/crates/bluedroid"
+					target="_blank">See on crates.io</a
 				>
 			</span>
 		</div>
 
 		<div class="res-card">
-			<img src="esp32c3.png" alt="ESP32-C3 Development Board" />
+			<img src="crates.png" alt="crates.io Logo" class="mt-12 scale-125" />
 			<span>
-				<h3>ESP32-C3 DevKitM-1</h3>
-				<h5>Espressif</h5>
+				<h3>AFE4404</h3>
+				<h5>Rust crate</h5>
 				<a
-					href="https://www.mouser.it/ProductDetail/Espressif-Systems/ESP32-C3-DevKitM-1?qs=pUKx8fyJudB1sOWbbEnGFw%3D%3D"
-					target="_blank"
-					>Buy from Mouser</a
+					href="https://crates.io/crates/afe4404"
+					target="_blank">See on crates.io</a
+				>
+			</span>
+		</div>
+
+		<div class="res-card">
+			<img src="macos_icon.png" alt="pulse.loop app icon" class="mt-12 scale-125" />
+			<span>
+				<h3>pulse.loop client</h3>
+				<h5>App source code</h5>
+				<a
+					href="https://github.com/pulse-loop/pulse.loop"
+					target="_blank">See on GitHub</a
 				>
 			</span>
 		</div>
@@ -195,8 +200,12 @@
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Fabio Cragnolini</h4>
 			<span class="flex flex-row gap-2">
-				<a href="https://github.com/FabioCragnolini" target="_blank"><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
-				<a href="https://linkedin.com/in/fabiocragnolini" target="_blank"><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
+				<a href="https://github.com/FabioCragnolini" target="_blank"
+					><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a
+				>
+				<a href="https://linkedin.com/in/fabiocragnolini" target="_blank"
+					><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a
+				>
 			</span>
 		</div>
 		<code><a href="mailto:fbcragnolini@gmail.com">fbcragnolini@gmail.com</a></code>
@@ -206,8 +215,12 @@
 		<div class="my-1 flex flex-row justify-between">
 			<h4 class="font-bold text-black">Riccardo Persello</h4>
 			<span class="flex flex-row gap-2">
-				<a href="https://github.com/persello" target="_blank"><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a>
-				<a href="https://linkedin.com/in/riccardo-persello" target="_blank"><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a>
+				<a href="https://github.com/persello" target="_blank"
+					><img src="github.svg" class="h-5 w-5" alt="GitHub Logo" /></a
+				>
+				<a href="https://linkedin.com/in/riccardo-persello" target="_blank"
+					><img src="linkedin.svg" class="h-5 w-5" alt="LinkedIn Logo" /></a
+				>
 			</span>
 		</div>
 		<code><a href="mailto:riccardo.persello@icloud.com">riccardo.persello@icloud.com</a></code>
@@ -216,7 +229,7 @@
 
 <style lang="scss">
 	.res-card {
-		@apply my-4 flex w-64 flex-none flex-col justify-between rounded-2xl bg-gray-50 p-8 overflow-clip z-10;
+		@apply z-10 my-4 flex w-64 flex-none flex-col justify-between overflow-clip rounded-2xl bg-gray-50 p-8;
 
 		img {
 			@apply mb-4 object-contain p-8 drop-shadow-lg;
@@ -234,9 +247,18 @@
 			@apply flex flex-col;
 
 			a {
-				@apply mt-4 self-stretch bg-blue-100 p-4 text-center font-semibold text-blue-500 transition-all hover:bg-blue-600 hover:text-white -m-8;
+				@apply -m-8 mt-4 self-stretch bg-blue-100 p-4 text-center font-semibold text-blue-500 transition-all hover:bg-blue-600 hover:text-white;
 			}
 		}
+	}
+
+	.hidden-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.hidden-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
 	}
 
 	.section {
