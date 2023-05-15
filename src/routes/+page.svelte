@@ -1,7 +1,6 @@
 <svelte:head>
 	<title>pulse.loop</title>
 	<meta name="description" content="An open source firmware for wearable pulse oximetry devices." />
-	<!-- TODO: Add logo. -->
 </svelte:head>
 
 <!-- Hero -->
@@ -151,6 +150,30 @@
 		</div>
 
 		<div class="res-card">
+			<img src="logos/macos_app.png" alt="pulse.loop app icon" class="mt-12 scale-125" />
+			<span>
+				<h3>pulse.loop client</h3>
+				<h5>Source code</h5>
+				<a
+					href="https://github.com/pulse-loop/pulse.loop"
+					target="_blank">See on GitHub</a
+				>
+			</span>
+		</div>
+
+		<div class="res-card">
+			<img src="logos/pl.png" alt="pulse.loop app icon" class="mt-12 scale-125" />
+			<span>
+				<h3>Firmware</h3>
+				<h5>Source code</h5>
+				<a
+					href="https://github.com/pulse-loop/firmware"
+					target="_blank">See on GitHub</a
+				>
+			</span>
+		</div>
+
+		<div class="res-card">
 			<img src="logos/crates.png" alt="crates.io Logo" class="mt-12 scale-125" />
 			<span>
 				<h3>Bluedroid</h3>
@@ -170,18 +193,6 @@
 				<a
 					href="https://crates.io/crates/afe4404"
 					target="_blank">See on crates.io</a
-				>
-			</span>
-		</div>
-
-		<div class="res-card">
-			<img src="logos/macos_app.png" alt="pulse.loop app icon" class="mt-12 scale-125" />
-			<span>
-				<h3>pulse.loop client</h3>
-				<h5>App source code</h5>
-				<a
-					href="https://github.com/pulse-loop/pulse.loop"
-					target="_blank">See on GitHub</a
 				>
 			</span>
 		</div>
