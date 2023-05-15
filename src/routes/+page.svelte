@@ -6,7 +6,11 @@
 <!-- Hero -->
 <div class="section h-screen justify-center">
 	<div class="flex flex-col items-center gap-5">
-		<img class="w-8/12" src="images/computer.png" alt="A computer with the pulse.loop app running." />
+		<img
+			class="w-8/12"
+			src="images/computer.png"
+			alt="A computer with the pulse.loop app running."
+		/>
 		<h1 class="text-7xl font-semibold">pulse.loop</h1>
 		<p class="text-lg text-gray-600">
 			An open source firmware for wearable pulse oximetry devices.
@@ -92,14 +96,18 @@
 		<div class="flex w-5/12 flex-col gap-4 text-right text-lg leading-8 text-gray-700">
 			<h2 class="text-5xl font-semibold text-black">Software</h2>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro labore sint iste
-				iure impedit voluptatum veniam accusantium architecto voluptate officiis, officia minima,
-				incidunt qui atque cupiditate neque fugiat doloribus.
+				The companion app developed for the project is developed in SwiftUI, a declarative UI
+				framework, and it's available for iOS and macOS devices. The application connects to the
+				pulse oximeter via Bluetooth Low Energy, enabling the real-time data monitoring and
+				visualization. CharacteristicKit is a library which uses metaprogramming concepts to allow
+				for an easy modelling of Bluetooth LE peripherals, and it's used as an high level
+				abstraction layer over Core Bluetooth.
 			</p>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ea, ad a recusandae, at, et
-				illo tempore nulla sint aperiam placeat asperiores earum laudantium. Magnam corporis dolorem
-				ab asperiores esse.
+				This software is not meant to be used by the end user, as it allows the set-up of many
+				internal parameters. However, it can be used to test the device and to collect data for
+				further analysis, and it's easily reducible to a simple monitoring app, while retaining to
+				internally change the parameters, with no intervention from the user.
 			</p>
 		</div>
 	</div>
@@ -111,14 +119,18 @@
 		<div class="flex w-5/12 flex-col gap-4 text-left text-lg leading-8 text-gray-700">
 			<h2 class="text-5xl font-semibold text-black">Results</h2>
 			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam expedita veritatis eum
-				quasi voluptate recusandae doloribus voluptatem. Reiciendis fugiat eius eum facilis harum
-				mollitia, delectus eligendi hic! Tenetur, quasi odit!
+				In conclusion, the pulse oximeter was calibrated against a commercial device and the
+				resulting data was processed with a MATLAB script. A regression model was obtained, which
+				can be used to calculate the SpO2 from our device's measurements. The results show that the
+				pulse oximeter is able to detect the heart rate and SpO2 with reasonable accuracy,
+				considering the sensor location, which inherently presents certain limitations. Despite
+				this, the project's outcome indicate the feasibility of utilizing a wrist-worn pulse
+				oximeter for non-invasive monitoring.
 			</p>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem earum architecto,
-				nemo ratione non est minus quia impedit sint aliquid blanditiis eum assumenda nisi ipsa
-				illum, facere optio ullam.
+				However, there is still room for improvement. Future iterations could benefit from a
+				calibration process conducted in a laboratory setting and further statistical analysis to
+				enhance the accuracy and reliability of the measurements.
 			</p>
 		</div>
 	</div>
@@ -127,7 +139,7 @@
 <!-- Resources -->
 <div class="section">
 	<h2 class="text-5xl font-semibold">Resources</h2>
-	<div class="-mx-24 flex flex-row flex-nowrap gap-6 overflow-x-auto px-24 hidden-scrollbar">
+	<div class="hidden-scrollbar -mx-24 flex flex-row flex-nowrap gap-6 overflow-x-auto px-24">
 		<div class="res-card">
 			<img src="images/hr3.png" alt="Mikroe Heart Rate 3 Click" />
 			<span>
@@ -154,10 +166,16 @@
 			<span>
 				<h3>pulse.loop client</h3>
 				<h5>Source code</h5>
-				<a
-					href="https://github.com/pulse-loop/pulse.loop"
-					target="_blank">See on GitHub</a
-				>
+				<a href="https://github.com/pulse-loop/pulse.loop" target="_blank">See on GitHub</a>
+			</span>
+		</div>
+
+		<div class="res-card">
+			<img src="logos/CharacteristicKit.png" alt="CharacteristicKit icon" class="mt-10 scale-125" />
+			<span>
+				<h3>CharacteristicKit</h3>
+				<h5>Swift Package</h5>
+				<a href="https://github.com/persello/CharacteristicKit" target="_blank">See on GitHub</a>
 			</span>
 		</div>
 
@@ -166,10 +184,7 @@
 			<span>
 				<h3>Firmware</h3>
 				<h5>Source code</h5>
-				<a
-					href="https://github.com/pulse-loop/firmware"
-					target="_blank">See on GitHub</a
-				>
+				<a href="https://github.com/pulse-loop/firmware" target="_blank">See on GitHub</a>
 			</span>
 		</div>
 
@@ -178,10 +193,7 @@
 			<span>
 				<h3>Bluedroid</h3>
 				<h5>Rust crate</h5>
-				<a
-					href="https://crates.io/crates/bluedroid"
-					target="_blank">See on crates.io</a
-				>
+				<a href="https://crates.io/crates/bluedroid" target="_blank">See on crates.io</a>
 			</span>
 		</div>
 
@@ -190,10 +202,7 @@
 			<span>
 				<h3>AFE4404</h3>
 				<h5>Rust crate</h5>
-				<a
-					href="https://crates.io/crates/afe4404"
-					target="_blank">See on crates.io</a
-				>
+				<a href="https://crates.io/crates/afe4404" target="_blank">See on crates.io</a>
 			</span>
 		</div>
 	</div>
